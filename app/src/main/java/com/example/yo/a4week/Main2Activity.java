@@ -50,16 +50,17 @@ public class Main2Activity extends AppCompatActivity {
 
         b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                result.setTextColor(Color.BLACK);
                 String t = e1.getText().toString();
                 String w = e2.getText().toString();
                 float bim = Float.parseFloat(w) / ((Float.parseFloat(t) / 100) * (Float.parseFloat(t) / 100));
                 if (bim < 18.5) {
                     result.setText("체중 부족 입니다.");
-                } else if (bim >= 18.5 && bim < 22.9) {
+                } else if (bim >= 18.5 && bim < 23) {
                     result.setText("정상입니다.");
-                } else if (bim >= 23 && bim < 24.9) {
+                } else if (bim >= 23 && bim < 25) {
                     result.setText("과체중 입니다.");
-                } else if(bim >=25){
+                } else if(bim >=25.0){
                     result.setText("비만입니다!!!");
                     result.setTextColor(Color.RED);
 
