@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 if(turn == 360){
                     turn = 0;
                 }
-
                 break;
             case R.id.mnuname:
 
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
                     t2.setVisibility(View.VISIBLE);
                     item.setChecked(true);
                 }
-
                 break;
             case R.id.mnubig:
                 if(item.isChecked() == false) {
@@ -105,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                     item.setChecked(false);
                 }
                 break;
-
             case R.id.mnuspa:
                 l1.setVisibility(View.GONE);
                 l2.setVisibility(View.VISIBLE);
@@ -115,11 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 l1.setVisibility(View.VISIBLE);
                 l2.setVisibility(View.GONE);
                 item.setChecked(true);
-
                 break;
-
-
-
         }
         return super.onOptionsItemSelected(item);
     }

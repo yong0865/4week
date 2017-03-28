@@ -1,6 +1,7 @@
 package com.example.yo.a4week;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -53,13 +54,14 @@ public class Main2Activity extends AppCompatActivity {
                 String w = e2.getText().toString();
                 float bim = Float.parseFloat(w) / ((Float.parseFloat(t) / 100) * (Float.parseFloat(t) / 100));
                 if (bim < 18.5) {
-                    result.setText("체중 부족");
-                } else if (bim <= 18.5 && bim > 22.9) {
-                    result.setText("정상");
-                } else if (bim <= 23 && bim > 24.9) {
-                    result.setText("과체중");
-                } else {
-                    result.setText("비만");
+                    result.setText("체중 부족 입니다.");
+                } else if (bim >= 18.5 && bim < 22.9) {
+                    result.setText("정상입니다.");
+                } else if (bim >= 23 && bim < 24.9) {
+                    result.setText("과체중 입니다.");
+                } else if(bim >=25){
+                    result.setText("비만입니다!!!");
+                    result.setTextColor(Color.RED);
 
                 }
             }
