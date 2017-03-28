@@ -12,13 +12,13 @@
         <activity
             android:name=".MainActivity"
             android:label="메뉴를 눌러보세요">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".Main2Activity" android:label="각종계산기"></activity>
     </application>
 
 </manifest>
