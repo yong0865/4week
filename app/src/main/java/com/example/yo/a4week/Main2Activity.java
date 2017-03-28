@@ -1,8 +1,10 @@
 package com.example.yo.a4week;
 
+import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TabHost;
@@ -67,7 +69,26 @@ public class Main2Activity extends AppCompatActivity {
         e3 = (EditText)findViewById(R.id.e3);
         b2 = (Button)findViewById(R.id.b2);
         b3 = (Button)findViewById(R.id.b3);
+        result2 = (TextView)findViewById(R.id.result2);
 
+
+    }
+
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.b2:
+                String num = e3.getText().toString();
+                float num1 = Float.parseFloat(num)* 3.3058f ;
+                result2.setText(num1 +"제곱미터");
+                break;
+            case R.id.b3:
+                String num2 = e3.getText().toString();
+                float num3 = Float.parseFloat(num2)* 0.3025f ;
+                result2.setText(num3 +"평");
+                break;
+
+
+        }
     }
 
 }

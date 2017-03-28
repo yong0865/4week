@@ -1,5 +1,6 @@
 package com.example.yo.a4week;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.support.v7.app.AppCompatActivity;
@@ -51,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
+            case R.id.mnuchange:
+                Intent intent = new Intent(this, Main2Activity.class);
+                startActivity(intent);
+                finish();
+
             case R.id.mnuBlue:
                 groud.setBackgroundColor(Color.BLUE);
                 break;

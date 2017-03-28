@@ -54,7 +54,7 @@
                             android:id="@+id/e3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="number" />
+                            />
 
                         <TableRow
                             android:layout_width="match_parent"
@@ -79,12 +79,14 @@
                         </TableRow>
 
                         <Button
+                            android:onClick="onClick"
                             android:id="@+id/b2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="평을 제곱미터로 변환" />
 
                         <Button
+                            android:onClick="onClick"
                             android:id="@+id/b3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
